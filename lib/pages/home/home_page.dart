@@ -47,6 +47,13 @@ class HomePage extends StatelessWidget {
           ),
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+          backgroundColor: Colors.black,
+          onPressed: () {},
+          child: const Icon(
+            Icons.share,
+            color: Colors.white,
+          )),
     );
   }
 }
