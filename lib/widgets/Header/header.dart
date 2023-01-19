@@ -19,7 +19,7 @@ class Header extends StatelessWidget {
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.w300),
             ),
             Text(
-              "Jack's Portfolio",
+              "Ken's Portfolio",
               style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
             )
           ],

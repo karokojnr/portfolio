@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:share_plus/share_plus.dart';
 
 import '../../example/projects.dart';
 import '../../responsive.dart';
@@ -36,16 +37,6 @@ class HomePage extends StatelessWidget {
                       mobile: mobileTabletBuilder(350),
                       tablet: mobileTabletBuilder(450),
                       desktop: desktopBuilder()),
-                  SizedBox(
-                    height: 350,
-                    child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemCount: projects.length,
-                      itemBuilder: (context, index) {
-                        return ProjectCard(project: projects[index]);
-                      },
-                    ),
-                  ),
                 ],
               ),
             ),
@@ -54,7 +45,9 @@ class HomePage extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.black,
-          onPressed: () {},
+          onPressed: () {
+            Share.share("Check out Ken's portfolio ");
+          },
           child: const Icon(
             Icons.share,
             color: Colors.white,
